@@ -1,5 +1,9 @@
 # Experience dependent behavior in C. elegans
- Code to run the simulations proposed in: María Sol Vidal-Saez, Oscar Vilarroya, and Jordi Garcia-Ojalvo. A Multiscale Sensorimotor Model of Experience-Dependent Behavior in a Minimal Organism.
+Code to reproduce the simulations and figures in the following paper:
+
+**María Sol Vidal-Saez**, Oscar Vilarroya, Jordi Garcia-Ojalvo, A multiscale sensorimotor model of experience-dependent behavior in a minimal organism, *Biophysical Journal*, Volume 123, Issue 12 (2024).
+
+See [paper](https://www.sciencedirect.com/science/article/abs/pii/S0006349524003229) for more details. 
 
 ## Organization
 
@@ -35,8 +39,20 @@ In the main.cpp file you can choose running example trajectories (#define trajec
 The NaCl concentration during cultivation can be changed with the parameter "phenotype(25)" (C_breed). We explored the values C_breed=25,50,100.
 
 ### WormAgent.h
-WormAgent.h
 You can choose between a step of NaCl (#define GRAD_STEP), or the gradient use in the paper (#define GRAD_GAUS). Beware that if you use the step concentration, you need to change the constant Preexposure to a value lower than 5000 for memory reasons.
+
+### Behavioral traces during Chemotaxis assay for different cultivation conditions
+Trajectories for 10 virtual worms set in a salt gradient (#define trajectories in main.cpp and #define GRAD_GAUS in WormAgent.h) for 3 pre-assay salt cultivation. 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c1250645-819e-497e-81d1-8215c16c1705" width="30%">
+  <img src="https://github.com/user-attachments/assets/196b5509-7505-4f43-9cfb-7b161a874bca" width="30%">
+  <img src="https://github.com/user-attachments/assets/90771474-33e9-4b00-acd3-6670e1c5eafc" width="30%">
+</p>
+
+
+
+
+
 
 
 
