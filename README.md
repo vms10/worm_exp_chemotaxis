@@ -41,7 +41,7 @@ The NaCl concentration during cultivation can be changed with the parameter "phe
 ### WormAgent.h
 You can choose between a step of NaCl (#define GRAD_STEP), or the gradient use in the paper (#define GRAD_GAUS). Beware that if you use the step concentration, you need to change the constant Preexposure to a value lower than 5000 for memory reasons.
 
-### Behavioral traces during Chemotaxis assay for different cultivation conditions
+## Behavioral traces during Chemotaxis assay for different cultivation conditions
 Trajectories for 10 virtual worms set in a salt gradient (#define trajectories in main.cpp and #define GRAD_GAUS in WormAgent.h) for 3 pre-assay salt cultivation. 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/c1250645-819e-497e-81d1-8215c16c1705" width="30%">
